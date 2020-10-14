@@ -1,0 +1,164 @@
+/* general */
+
+body {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #7163ec, #cb73ca );
+    height: 100vh;
+}
+
+li{
+    list-style: none;
+}
+
+/* header */
+nav{
+    padding:0.5em;
+    height: 5vh;
+    background: #2b244d;
+}
+
+nav h1 {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+    color: white;
+}
+
+/* Main */
+#app{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2em;
+    padding-top: 2em;
+    min-height: 60vh;
+    border-radius: 0.8em;
+    background: #fff;
+    background-image: url('../img/main.jpg');
+    background-position: top center;
+    background-size: 100% 40%;
+    background-repeat: no-repeat;
+}
+
+.weather{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-self: start;
+}
+
+.weather .degree{
+    width:50%;
+    
+}
+.weather .degree span{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    display: block;
+}
+
+.weather .degree ul{
+    padding: 0;
+    display:flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.weather .degree ul .seperate{
+    height: 35px;
+    display: inline-block;
+    width: 2px;
+    background-color: #000;
+}
+
+.weather .city{
+    width: 30%;
+    margin:0;
+    padding:0;
+    color: red;
+    text-align: center;
+}
+h2 span{
+    width: 60px;
+    text-align: center;
+    height: 5px;
+    border-radius: 0.3em;
+    background-color: black;
+    display: inline-block;
+}
+
+.day{
+    width:90%;
+    margin: 0;
+    margin-top: 4em;
+    padding: 0 15px;
+}
+
+.day ul {
+    display:flex;
+    padding: 0;
+    justify-content:space-between;
+}
+
+.day ul li{
+    width:10%;
+    text-align: center;
+}
+
+.day ul li span{
+    display:block;
+    text-align: center;
+}
+
+.day ul li strong{
+    display:block;
+    text-align: center;
+}
+
+.day ul li img{
+    width:85%;
+}
+
+/*Media Query*/
+
+@media screen and (min-width: 768px) {
+  .day{
+    margin-top: 5em;
+  }
+}
+
+@media screen and (min-width: 922px) {
+    #app{
+    background-size: 100% 50%;
+  }
+
+  .day{
+    margin-top: 30em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #app{
+    background-size: 100% 55%;
+  }
+
+  .day{
+    margin-top: 10em;
+  }
+
+}
+
+@media screen and (min-width: 1600px) {
+    #app{
+    background-size: 100% 55%;
+    height: 65vh;
+  }
+
+  .day{
+    margin-top: 15em;
+  }
+}
